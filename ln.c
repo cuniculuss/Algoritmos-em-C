@@ -1,5 +1,6 @@
 #include <math.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 int lg (int N) {  
    double x;
@@ -8,8 +9,13 @@ int lg (int N) {
 }
 
 
-int main (void)
+int main (int argc, char *argv[])
 {
-	int b = lg (-49);
-	printf("%i\n", b);
+	if (argc != 2)
+	{
+		printf("Usage: ./ln 'number'\n");
+		return 1;
+	}
+	int num = atoi( argv[1]);
+	printf("%i\n", lg(num));
 }
