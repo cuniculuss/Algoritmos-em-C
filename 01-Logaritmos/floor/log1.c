@@ -1,3 +1,5 @@
+// Critique a seguinte versão da função lg.  Ela usa as funções log10 e floor da biblioteca math:
+//
 #include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
